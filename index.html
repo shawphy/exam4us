@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
-    <meta name=”Keywords” Content="教育,培训,英语,外语,背单词,托福,雅思,GRE,高考,SAT">
-    <link rel="icon" href="/favicon-128.png" sizes="16x16 32x32 64x64 128x128" type="image/png"/>
-    <title>背单词计划表——高考-四级-六级-SAT-托福-雅思-GRE-《17天搞定GRE单词》</title>
-    <style type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+<meta name=”Keywords” Content="教育,培训,英语,外语,背单词,托福,雅思,GRE,高考,SAT">
+<link rel="icon" href="/favicon-128.png" sizes="16x16 32x32 64x64 128x128" type="image/png" />
+<title>背单词计划表——高考-四级-六级-SAT-托福-雅思-GRE-《17天搞定GRE单词》</title>
+<style type="text/css">
 	a{text-decoration: none;color:#39f; }
 	body{width: 988px; margin: 0 auto;}
 	th{text-align: right; font-size: 14px; color: #666;width: 100px;}
@@ -47,55 +48,48 @@
 	}  
 
 	</style>
-	<style id="style_js"></style>
+<style id="style_js"></style>
 </head>
 <body>
 <form id="sidebar">
- 	<table>
- 		<tr><th>计划名</th><td><input id="plan"></td></tr>
- 		<tr><th>List 名</th><td><input id="book"></td></tr>
- 		<tr><th>开始日期</th><td><input id="startDate" type="date"></td></tr>
- 		<tr><th>每天List/Page</th><td><input id="listPerDay"></td></tr>
- 		<tr><th>List/Page总数</th><td><input id="totalList"><br></td></tr>
- 		<tr><th>是否逆序</th><td><input id="reverse"	type="checkbox"></td></tr>
- 		<tr><td><button id="generate">点击这里生成</button></td><td><button type="button" title="在打印对话框中，更改目标打印机，可以另存为PDF文件。" onclick="javascript:window.print()">打印或另存为PDF</button></td></tr>
- 		<tr><td colspan=2>注1：本工具根据最新《<a href="https://www.amazon.cn/gp/product/B0011C0ZQ0/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C0ZQ0&linkCode=as2&tag=shawphy-23">17天搞定GRE单词</a>》第二版，第35页上的21天时间表，动态生成时间表。时间间隔为1,2,4,7,15天。与网上流传的老版扫描版略有不同。</td></tr>
- 		<tr><td colspan=2>注2：列表中星号表示复习。按原书建议，上午学习新list，下午或晚上复习打星的list。背完或者复习完就可以划掉增加成就感。</td></tr>
- 		<tr><td colspan=2>注3：本页面可直接打印，打印时不会有侧边栏。打印界面更改目标打印机，可另存为PDF文件。实在没办法了就截图放到word里打印。</td></tr>
- 		<tr><td colspan=2>注4：本工具建议使用 <a href="https://www.google.com/intl/zh-CN/chrome/browser/">谷歌浏览器</a> 访问。IE 10 以下版本不保证正常使用。 </td></tr>
- 		<tr><td colspan=2>注5：下方广告由Google提供，内容与本站无关。</td></tr>
- 		<tr><td colspan=2>注6：祝大家考试顺利！</td></tr>
- 		<!--tr><td colspan="2"><img src="mail.png"></td></tr-->
-		<!--tr><td colspan=2><div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到豆瓣" class="bshare-douban"></a><a title="分享到QQ好友" class="bshare-qqim"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到开心网" class="bshare-kaixin001"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/bshareC0.js"></script></td></tr-->
+<table>
+<tr><th>计划名</th><td><input id="plan"></td></tr>
+<tr><th>List 名</th><td><input id="book"></td></tr>
+<tr><th>开始日期</th><td><input id="startDate" type="date"></td></tr>
+<tr><th>每天List/Page</th><td><input id="listPerDay"></td></tr>
+<tr><th>List/Page总数</th><td><input id="totalList"><br></td></tr>
+<tr><th>是否逆序</th><td><input id="reverse" type="checkbox"></td></tr>
+<tr><td><button id="generate">点击这里生成</button></td><td><button type="button" title="在打印对话框中，更改目标打印机，可以另存为PDF文件。" onclick="javascript:window.print()">打印或另存为PDF</button></td></tr>
+<tr><td colspan=2>注1：本工具根据最新《<a href="https://www.amazon.cn/gp/product/B0011C0ZQ0/ref=as_li_ss_tl?ie=UTF8&camp=536&creative=3132&creativeASIN=B0011C0ZQ0&linkCode=as2&tag=shawphy-23">17天搞定GRE单词</a>》第二版，第35页上的21天时间表，动态生成时间表。时间间隔为1,2,4,7,15天。与网上流传的老版扫描版略有不同。</td></tr>
+<tr><td colspan=2>注2：列表中星号表示复习。按原书建议，上午学习新list，下午或晚上复习打星的list。背完或者复习完就可以划掉增加成就感。</td></tr>
+<tr><td colspan=2>注3：本页面可直接打印，打印时不会有侧边栏。打印界面更改目标打印机，可另存为PDF文件。实在没办法了就截图放到word里打印。</td></tr>
+<tr><td colspan=2>注4：本工具建议使用 <a href="https://www.google.com/intl/zh-CN/chrome/browser/">谷歌浏览器</a> 访问。IE 10 以下版本不保证正常使用。 </td></tr>
+<tr><td colspan=2>注5：下方广告由Google提供，内容与本站无关。</td></tr>
+<tr><td colspan=2>注6：祝大家考试顺利！</td></tr>
 
 
- 	</table>
-	<br>
+</table>
+<br>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8388128301717092"
-     data-ad-slot="3468694309"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8388128301717092" data-ad-slot="3468694309" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </form>
 <h1></h1>
 <div id="output">
-	<span>Sun</span>
-	<span>Mon</span>
-	<span>Tue</span>
-	<span>Wed</span>
-	<span>Thu</span>
-	<span>Fri</span>
-	<span>Sat</span>
-	<div id="calendar"></div>
+<span>Sun</span>
+<span>Mon</span>
+<span>Tue</span>
+<span>Wed</span>
+<span>Thu</span>
+<span>Fri</span>
+<span>Sat</span>
+<div id="calendar"></div>
 </div>
 <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.slim.min.js"></script>
-<!-- <script src="jquery.slim.min.js"></script> -->
-<script >
+
+<script>
 	$("#plan").val(localStorage.getItem("plan")||"背单词计划表");
 	$("#book").val(localStorage.getItem("book")||"L");
 	$("#listPerDay").val(localStorage.getItem("listPerDay")||"2");
@@ -179,7 +173,6 @@
 
 	}
 </script>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
